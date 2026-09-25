@@ -4,10 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web</title>
+    <style>
+        body{
+            background-image: url('Nitro.jpg');
+            -webkit-text-fill-color: #f0f0f0;
+        }
+        .mi-contenedor {
+            justify-content: end;
+  width: 400px;         /* Define el ancho de la caja */
+  padding: 20px;        /* Espacio libre por dentro de la caja */
+  margin: 10px auto;    /* Espacio por fuera (auto lo centra en la pantalla) */
+  background-color: #f0f0f0; /* Color de fondo gris claro */
+  border: 1px solid #ccc;    /* Un borde delgado alrededor */
+  border-radius: 8px;   /* Redondea las esquinas de la caja */
+  -webkit-text-fill-color: black;
+}
+
+    </style>
+    
 </head>
 <body>
-    <!--Aqui va el titulo de la pagina web-->
-    <h1>Mi primera Página web desarrollada por Marlon </h1>
+        <!--Aqui va el titulo de la pagina web-->
+    <!--Etiquetas h-->
+    <h1 style="text-align: center;">Mi primera Página web desarrollada por Marlon </h1>
+    <h2 style="text-align: center;">No te emociones</h2>
+    <h3 style="text-align: center;">por lo que vas a ver</h3>
+    <h4>No te aloques</h4>
+    <h5>Esto te estimulara</h5>
+    <h6>Ya comprame</h6>
+
+    <!--Contenedores
+    Son espacios moviles donde se crea contenido html section, dic, article-->
+
+<div class="mi-contenedor">
+  <h2>Título dentro de la caja</h2>
+  <p>Este es un texto que está guardado dentro del contenedor junto a la imagen.</p>
+  <img src="img/Nitro.jpg" alt="la imagen" style="width: 100%;">
+</div>
+
+    <section>
+        <!--Un enlace a youtube
+        Utilizamos la etiqueta a-ancle
+        Rutas absolutas: Es cuando queremos enlazarnos a recursos externos de mi proyecto
+        Rutas relativas: Es cuando quiero enlazarme a recursos dentro de mi proyecto -->
+
+        <a target="_blank" href="https://youtu.be/c0m6yaGlZh4?si=EP5j_QUrMRKHsfLC"> IA</a> 
+        <!--Escribir un parrafo-->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non culpa cupiditate fuga magnam earum ea repudiandae neque labore perferendis voluptate laborum saepe sint reiciendis doloremque eum aperiam nihil, esse ut.
+            Non impedit dolor veritatis sapiente repellat, qui ut voluptas illum facilis tempore, nihil fugiat! Modi deleniti repellendus sequi excepturi voluptatem animi aliquid facere error, ipsa ea ab obcaecati pariatur soluta.
+            Totam ipsam ex iure distinctio fugit tempore vero ea et nemo, accusamus pariatur obcaecati, enim veniam dolor blanditiis libero qui eaque eligendi in quae atque rem error illum exercitationem! Repellat!
+            Odit magni nihil optio, officia architecto aut consectetur eum tempore non iusto impedit voluptatem maxime ratione repellat praesentium reiciendis quam provident sint saepe animi minima. Harum fugit temporibus repudiandae reprehenderit.
+            Magni tenetur cum enim exercitationem vitae? Optio error, enim nesciunt similique laboriosam iste iure nemo obcaecati quisquam! Pariatur quis veniam vel iure, rem officiis, non accusantium sapiente eveniet, nesciunt porro.
+        </p>
+
+    </section><!--Fin del section-->
+<!--Etiqueta a salto de linea-->
+<br>
+    <!--Enlace a una imgen -->
+        
     <p> Ingresa a Google <a target="_blank" href="https://www.google.co.nz"> Google</a></p>
+    <!--contenedor de listas-->
+    <div>   
+        <h2>Tipos de Carros</h2>
+        <ul>
+            <li>ferrari</li>
+            <ul>
+                <li>MZ234</li>
+                <li>BN325</li>
+            </ul>
+            <li>mazda</li>
+            <li>toyota</li>
+            <li>Chevrolet</li>
+            <li>FOrd</li>
+            <li>Supra</li>
+        </ul>
+    </div>
 </body>
 </html>
