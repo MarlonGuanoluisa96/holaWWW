@@ -4,81 +4,395 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web</title>
-    <style>
-        body{
-            background-image: url('Nitro.jpg');
-            -webkit-text-fill-color: #f0f0f0;
-        }
-        .mi-contenedor {
-            justify-content: end;
-  width: 400px;         /* Define el ancho de la caja */
-  padding: 20px;        /* Espacio libre por dentro de la caja */
-  margin: 10px auto;    /* Espacio por fuera (auto lo centra en la pantalla) */
-  background-color: #f0f0f0; /* Color de fondo gris claro */
-  border: 1px solid #ccc;    /* Un borde delgado alrededor */
-  border-radius: 8px;   /* Redondea las esquinas de la caja */
-  -webkit-text-fill-color: black;
-}
-
-    </style>
-    
+        
 </head>
-<body>
+<body style="text-align: center;">
         <!--Aqui va el titulo de la pagina web-->
     <!--Etiquetas h-->
-    <h1 style="text-align: center;">Mi primera Página web desarrollada por Marlon </h1>
-    <h2 style="text-align: center;">No te emociones</h2>
-    <h3 style="text-align: center;">por lo que vas a ver</h3>
-    <h4>No te aloques</h4>
-    <h5>Esto te estimulara</h5>
-    <h6>Ya comprame</h6>
-
+    <h1>Mi primera Página web desarrollada por Marlon </h1>
     <!--Contenedores
     Son espacios moviles donde se crea contenido html section, dic, article-->
 
-<div class="mi-contenedor">
-  <h2>Título dentro de la caja</h2>
-  <p>Este es un texto que está guardado dentro del contenedor junto a la imagen.</p>
-  <img src="img/Nitro.jpg" alt="la imagen" style="width: 100%;">
-</div>
-
+    <!--Creamos una tabla-->
     <section>
-        <!--Un enlace a youtube
-        Utilizamos la etiqueta a-ancle
-        Rutas absolutas: Es cuando queremos enlazarnos a recursos externos de mi proyecto
-        Rutas relativas: Es cuando quiero enlazarme a recursos dentro de mi proyecto -->
+        <div>
+            <table border="1px" style="text-align: center;">
+                <thead>
+                    <tr>
+                     <th>Lenguajes de Programacion</th>
+                     <th>Usuarios</th>
+                     <th>Año de creación</th>
+                </tr>
+                </thead>
+                
+                <tr >
+                    <td>Python</td>
+                    <td>~22.9 millones</td>
+                    <td>1991</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>~16.5 millones</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>~14.0 millones</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>TypeScrip</td>
+                    <td>~10.5 millones</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>C#</td>
+                    <td>~9.5 millones</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>~7.5 millones</td>
+                    <td>1983</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>~6.0 millones</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>~5.5 millones</td>
+                    <td>1972</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td>~4.5 millones</td>
+                    <td>1972</td>
+                </tr>
+                <tfoot>
+                   <tr>
+                    <td>Go(Golang)</td>
+                    <td>~4.0 millones</td>
+                    <td>2009</td>
+                    </tr> 
+                </tfoot>
+                
+            </table>
+        </div>
+    </section>
+    <br>
+    <!--Segunda Tabla-->
+    <section>
+        <div><!--Contenedor para Tabla-->
+            <table border="1px"> <!--Tabla con borde de 1 pixel-->
+                <thead><!--Encabezado Principal
+                    tr: contendor de filas, th: contenedor de titulos-->
+                    <tr>
+                        <th colspan="11">Tabla de Ventas de Productos - Tienda Tecnologica</th> <!--Fila 1 :Titulo combinado en una sola fila-->
+                    </tr>
+                     <tr> <!--colspan: unión de columnas, rowspan: unión de filas
+                        td: contendor de datos
+                        Fila 2 -->
+                        <td rowspan="2"> Categoria </td>
+                        <td rowspan="2"> N° </td>
+                        <td rowspan="2"> Imangen </td>
+                        <td rowspan="2"> Producto </td>
+                        <td rowspan="2"> Descripcion </td>
+                        <td colspan="3"> Ventas Mensuales (Unidades) </td>
+                        <td rowspan="2"> Total Unidades </td>
+                        <td rowspan="2"> Precio Unitario (USD) </td>
+                        <td rowspan="2"> Total Ventas (USD) </td>
+                    </tr>
+                    <tr><!--Fila 3-->
+                        <td>Enero</td>
+                        <td>Febrero</td>
+                        <td>Marzo</td>
+                    </tr>
+                </thead>
+                <!--Cuerpo de la Tabla
+                Enlaces relativos: <img src:""> -->
+                <tbody>
+                    <tr><!--Fila 4-->
+                        <td rowspan="5">
+                            Computadoras y Accessorios <br> (5 productos)
+                        </td>
+                        <td> 1</td>
+                        <td> <img src="img/laptop.avif" alt="Laptop" height="30px"></td>
+                        <td> Laptop Lenovo IdeaPad3</td>
+                        <td> Laptop 15.6" Ryzen 5, 8GB RAM , 512GB SSD</td>
+                        <td> 12 </td>
+                        <td> 15 </td>
+                        <td> 18 </td>
+                        <td> 45 </td>
+                        <td> $650.00 </td>
+                        <td> $29250.00 </td>
+                    </tr>
+                    <tr><!--Fila 5-->
+                        <td> 2 </td>
+                        <td> <img src="img/escritorio.png" alt="escritorio" height="30px"></td>
+                        <td> PC de Escritorio HP</td>
+                        <td> Intel Core i5, 16GB RAM , 512GB SSD</td>
+                        <td> 8 </td>
+                        <td> 10 </td>
+                        <td> 12 </td>
+                        <td> 30 </td>
+                        <td> $750.00 </td>
+                        <td> $22500.00 </td>
+                    </tr>
+                    <tr><!--Fila 6-->
+                        <td> 3 </td>
+                        <td> <img src="img/monitor.avif" alt="monitor" height="30px"></td>
+                        <td> Monitor Samsung 24" </td>
+                        <td> Monitor IPS 24" Full HD</td>
+                        <td> 15 </td>
+                        <td> 20 </td>
+                        <td> 18 </td>
+                        <td> 53 </td>
+                        <td> $180.00 </td>
+                        <td> $9540.00 </td>
+                    </tr>
+                    <tr><!--Fila 7-->
+                        <td> 4 </td>
+                        <td> <img src="img/teclado.png" alt="teclado" height="30px"></td>
+                        <td> Teclado Mecánico </td>
+                        <td> Teclado RGB, switches azules</td>
+                        <td> 25 </td>
+                        <td> 30 </td>
+                        <td> 28 </td>
+                        <td> 83 </td>
+                        <td> $45.00 </td>
+                        <td> $3735.00 </td>
+                    </tr>
+                    <tr><!--Fila 8-->
+                        <td> 5 </td>
+                        <td> <img src="img/mouse.png" alt="mouse" height="30px"></td>
+                        <td> Mouse Inalámbrico </td>
+                        <td> Mpuse óptico ergonómico</td>
+                        <td> 30 </td>
+                        <td> 35 </td>
+                        <td> 40 </td>
+                        <td> 105 </td>
+                        <td> $25.00 </td>
+                        <td> $2625.00 </td>
+                    </tr>
+                    <tr><!--Fila 9-->
+                        <td rowspan="4">
+                            Telefonía <br>(4 productos)
+                        </td>
+                        <td> 6</td>
+                        <td> <img src="img/iphone.jpg" alt="iPhone" height="30px"></td>
+                        <td> iPhone 14</td>
+                        <td> Smartphone 128GB</td>
+                        <td> 10 </td>
+                        <td> 12 </td>
+                        <td> 15 </td>
+                        <td> 37 </td>
+                        <td> $850.00 </td>
+                        <td> $31450.00 </td>
+                    </tr>
+                     <tr><!--Fila 10-->
+                        <td> 7</td>
+                        <td> <img src="img/samsung.webp" alt="samsung" height="30px"></td>
+                        <td> Samsung Galaxy A54</td>
+                        <td> Smartphone 128GB</td>
+                        <td> 18 </td>
+                        <td> 20 </td>
+                        <td> 22 </td>
+                        <td> 60 </td>
+                        <td> $420.00 </td>
+                        <td> $25200.00 </td>
+                    </tr>
+                     <tr><!--Fila 11-->
+                        <td> 8</td>
+                        <td> <img src="img/audifonos.png" alt="audifonos" height="30px"></td>
+                        <td> Audífonos Bluetooth</td>
+                        <td> Audífonos Inalámbricos con estuche </td>
+                        <td> 25 </td>
+                        <td> 28 </td>
+                        <td> 35 </td>
+                        <td> 88 </td>
+                        <td> $60.00 </td>
+                        <td> $5280.00 </td>
+                    </tr>
+                     <tr><!--Fila 12-->
+                        <td> 9</td>
+                        <td> <img src="img/smartwatch.avif" alt="smartwatch" height="30px"></td>
+                        <td> Smartwatch</td>
+                        <td> Reloj inteligente con sensor de salud </td>
+                        <td> 12 </td>
+                        <td> 15 </td>
+                        <td> 18 </td>
+                        <td> 45 </td>
+                        <td> $120.00 </td>
+                        <td> $5400.00 </td>
+                    </tr>
+                    <tr><!--Fila 13-->
+                        <td rowspan="4">
+                            Electrodomésticos <br>(4 productos)
+                        </td>
+                        <td> 10</td>
+                        <td> <img src="img/refrigerador.avif" alt="refrigerador" height="30px"></td>
+                        <td> Refrigerador LG</td>
+                        <td> Refrigeradora 280 litros</td>
+                        <td> 6 </td>
+                        <td> 8 </td>
+                        <td> 10 </td>
+                        <td> 24 </td>
+                        <td> $780.00 </td>
+                        <td> $18720.00 </td>
+                    </tr>
+                     <tr><!--Fila 14-->
+                        <td> 11</td>
+                        <td> <img src="img/lavadora.png" alt="lavadora" height="30px"></td>
+                        <td> Lavadora Samsung</td>
+                        <td> Lavadora 12 kg</td>
+                        <td> 8 </td>
+                        <td> 10 </td>
+                        <td> 12 </td>
+                        <td> 30 </td>
+                        <td> $550.00 </td>
+                        <td> $16500.00 </td>
+                    </tr>
+                     <tr><!--Fila 15-->
+                        <td> 12</td>
+                        <td> <img src="img/microondas.jpg" alt="microondas" height="30px"></td>
+                        <td> Microondas Oster</td>
+                        <td> Microondas 25 litros</td>
+                        <td> 12 </td>
+                        <td> 15 </td>
+                        <td> 18 </td>
+                        <td> 45 </td>
+                        <td> $130.00 </td>
+                        <td> $5850.00 </td>
+                    </tr>
+                     <tr><!--Fila 16-->
+                        <td> 13</td>
+                        <td> <img src="img/licuadora.png" alt="licuadora" height="30px"></td>
+                        <td> Licuadora Philips</td>
+                        <td> Licuadora 600W</td>
+                        <td> 20 </td>
+                        <td> 25 </td>
+                        <td> 28 </td>
+                        <td> 73 </td>
+                        <td> $70.00 </td>
+                        <td> $5110.00 </td>
+                    </tr>
+                    <tr><!--Fila 17-->
+                        <td rowspan="4">
+                            Hogar y Oficina <br>(4 productos)
+                        </td>
+                        <td> 14</td>
+                        <td> <img src="img/silla.png" alt="silla" height="30px"></td>
+                        <td> Silla de Oficina</td>
+                        <td> Silla ergonómica</td>
+                        <td> 10 </td>
+                        <td> 12 </td>
+                        <td> 15 </td>
+                        <td> 37 </td>
+                        <td> $110.00 </td>
+                        <td> $4070.00 </td>
+                    </tr>
+                     <tr><!--Fila 18-->
+                        <td> 15</td>
+                        <td> <img src="img/mesa.avif" alt="mesa" height="30px"></td>
+                        <td> Escritorio</td>
+                        <td> Escritorio para oficina 120cm</td>
+                        <td> 8 </td>
+                        <td> 10 </td>
+                        <td> 12 </td>
+                        <td> 30 </td>
+                        <td> $150.00 </td>
+                        <td> $4500.00 </td>
+                    </tr>
+                     <tr><!--Fila 19-->
+                        <td> 16</td>
+                        <td> <img src="img/estanteria.avif" alt="estanteria" height="30px"></td>
+                        <td> Estantería</td>
+                        <td> Estantería de 5 niveles </td>
+                        <td> 12 </td>
+                        <td> 15 </td>
+                        <td> 18 </td>
+                        <td> 45 </td>
+                        <td> $90.00 </td>
+                        <td> $4050.00 </td>
+                    </tr>
+                     <tr><!--Fila 20-->
+                        <td> 17</td>
+                        <td> <img src="img/lampara.png" alt="lampara" height="30px"></td>
+                        <td> Lámpara LED</td>
+                        <td> Lámpara de escritorio LED</td>
+                        <td> 18 </td>
+                        <td> 22 </td>
+                        <td> 25 </td>
+                        <td> 65 </td>
+                        <td> $35.00 </td>
+                        <td> $2275.00 </td>
+                    </tr>
+                    <tr><!--Fila 21-->
+                        <td rowspan="3">
+                            Gaming <br>(3 productos)
+                        </td>
+                        <td> 18</td>
+                        <td> <img src="img/ps5.png" alt="ps5" height="30px"></td>
+                        <td> Consola PlayStation 5</td>
+                        <td> Consola PS5 1TB</td>
+                        <td> 5 </td>
+                        <td> 8 </td>
+                        <td> 10 </td>
+                        <td> 23 </td>
+                        <td> $550.00 </td>
+                        <td> $12650.00 </td>
+                    </tr>
+                     <tr><!--Fila 22-->
+                        <td> 19</td>
+                        <td> <img src="img/control.webp" alt="control" height="30px"></td>
+                        <td> Control Xbox</td>
+                        <td> Control Inalámbrico Xbox Series</td>
+                        <td> 18 </td>
+                        <td> 22 </td>
+                        <td> 25 </td>
+                        <td> 65 </td>
+                        <td> $70.00 </td>
+                        <td> $4550.00 </td>
+                    </tr>
+                     <tr><!--Fila 23-->
+                        <td> 20</td>
+                        <td> <img src="img/headset.jpg" alt="headset" height="30px"></td>
+                        <td> Headset Gamer</td>
+                        <td> Audífonos gamer con micrófono </td>
+                        <td> 20 </td>
+                        <td> 28 </td>
+                        <td> 30 </td>
+                        <td> 78 </td>
+                        <td> $90.00 </td>
+                        <td> $7020.00 </td>
+                    </tr>
+                </tbody>
+                <!--Pie de la Tabla-->
+                <tfoot>
+                    <tr><!--Fila 24-->
+                        <td colspan="5"> TOTAL GENERAL</td>
+                        <td>277</td>
+                        <td>345</td>
+                        <td>396</td>
+                        <td>1018</td>
+                        <td>-</td>
+                        <td>$210025.00</td>
+                    </tr>
+                    <tr><!--Fila 25-->
+                        <td colspan="5"> Promedio de Ventas por Mes</td>
+                        <td>55</td>
+                        <td>69</td>
+                        <td>79</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>$42005.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
 
-        <a target="_blank" href="https://youtu.be/c0m6yaGlZh4?si=EP5j_QUrMRKHsfLC"> IA</a> 
-        <!--Escribir un parrafo-->
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non culpa cupiditate fuga magnam earum ea repudiandae neque labore perferendis voluptate laborum saepe sint reiciendis doloremque eum aperiam nihil, esse ut.
-            Non impedit dolor veritatis sapiente repellat, qui ut voluptas illum facilis tempore, nihil fugiat! Modi deleniti repellendus sequi excepturi voluptatem animi aliquid facere error, ipsa ea ab obcaecati pariatur soluta.
-            Totam ipsam ex iure distinctio fugit tempore vero ea et nemo, accusamus pariatur obcaecati, enim veniam dolor blanditiis libero qui eaque eligendi in quae atque rem error illum exercitationem! Repellat!
-            Odit magni nihil optio, officia architecto aut consectetur eum tempore non iusto impedit voluptatem maxime ratione repellat praesentium reiciendis quam provident sint saepe animi minima. Harum fugit temporibus repudiandae reprehenderit.
-            Magni tenetur cum enim exercitationem vitae? Optio error, enim nesciunt similique laboriosam iste iure nemo obcaecati quisquam! Pariatur quis veniam vel iure, rem officiis, non accusantium sapiente eveniet, nesciunt porro.
-        </p>
-
-    </section><!--Fin del section-->
-<!--Etiqueta a salto de linea-->
-<br>
-    <!--Enlace a una imgen -->
-        
-    <p> Ingresa a Google <a target="_blank" href="https://www.google.co.nz"> Google</a></p>
-    <!--contenedor de listas-->
-    <div>   
-        <h2>Tipos de Carros</h2>
-        <ul>
-            <li>ferrari</li>
-            <ul>
-                <li>MZ234</li>
-                <li>BN325</li>
-            </ul>
-            <li>mazda</li>
-            <li>toyota</li>
-            <li>Chevrolet</li>
-            <li>FOrd</li>
-            <li>Supra</li>
-        </ul>
-    </div>
 </body>
 </html>
