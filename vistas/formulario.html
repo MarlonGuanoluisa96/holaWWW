@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--Header: es la cabecera dek body-->
+   <header>
+        <h1>Formulario de Registro de Estudiantes</h1> 
+        <h2>Instituto Superior Tecnológico Quito</h2>
+   </header>
+   <!--formulario-->
+   <div>
+    <h2>
+        1. Datos Personales
+    </h2>
+        <form action="../index.html" method="post">
+            <div>
+                <!--Label: Me permite ingresar texto fijo-->
+                <label for="nombre">Nombres:</label>
+                <br>
+                <!--Input: caja ingresar texto fijo-->
+                <input type="text" id="nombre" placeholder="Ingrese sus nombre aqui" size="35" required>
+                <br>
+
+                <!--Label: Me permite ingresar texto fijo-->
+                <label for="apellidos">Apellidos:</label>
+                <!--Input: caja ingresar texto fijo-->
+                <br>
+                <input type="text" id="apellidos" placeholder="Ingrese sus apellidos aqui" size="35" required>
+                <br>
+
+                <label for="nacimiento">Fecha de Nacimiento</label>
+                <!--Input: caja ingresar texto fijo-->
+                <br>
+                <input type="date" id="nacimiento" size="35" required>
+                <br>
+
+                <!--Label: Me permite ingresar texto fijo-->
+                <label for="identificacion">Cédula/Identificación:</label>
+                <br>
+                <!--Input:Text caja ingresar texto fijo-->
+                <input type="number" id="identificacion" placeholder="Ingrese su número de cédula" size="35" required>
+                <br>
+                <!--<fieldset> La forma correcta de usar radio para enviar la informacion
+                    <legend>Género</legend>
+                    <input type="radio" name="Género" id="Masculino">
+                    <label for="Masculino">Masculino</label>
+                    <input type="radio" name="Género" id="Femenino">
+                    <label for="Femenino">Masculino</label>
+                    <input type="radio" name="Género" id="Otro">
+                    <label for="Otro">Masculino</label>
+                </fieldset>-->
+                <!--input:radio permite seleccionar un único valor entre varias opciones con el mismo valor-->
+                <label for="Género">Género</label>
+                <br>
+                <input type="radio" name="Género" id="Masculino"> Masculino
+                <input type="radio" name="Género" id="Femenino"> Femenino
+                <input type="radio" name="Género" id="Otro"> Otro
+                <br>
+                <label for="Estado">Estado Civil</label>
+                <br>
+                <!--Estiqueta Select y option para crear una caja de opciones-->
+                <select name="Estado" id="Estado" style="width: 270px;">
+                    <option value="" disabled selected >Seleccione una opción</option>
+                    <option value="Casado"> Casado</option>
+                    <option value="Soltero"> Soltero</option>
+                    <option value="Divorciado">Divorciado</option>
+                </select>
+                <br>
+                <label for="email">Correo Eléctronico</label>
+                <br>
+                <!--Input: caja ingresar texto fijo-->
+                <input type="email" id="email" placeholder="ejemplo@correo.com" size="35">
+                <br>
+
+                <label for="número"> Teléfono</label>
+                <br>
+                <input type="tel" id="número" placeholder="Ingrese su número de teléfono" size="35">
+
+                <br>
+                <label for="direccion">Dirección:</label>
+                <!--Input: caja ingresar texto fijo-->
+                <br>
+                <input type="text" id="direccion" placeholder="Ingrese su dirección" size="35">
+            </div>
+
+            
+        </form>
+   </div>
+   <br>
+   <header>
+     <h2>
+        2. Información Académica
+    </h2>
+   </header>
+   <div>
+    <form action="" method="get">
+        <div>
+            <label for="carrera">Carrera:</label>
+                <br>
+                <select name="carrera" id="carrera" style="width: 270px;">
+                    <option value="" disabled selected >Seleccione una carrera</option>
+                    <option value="Desarrollo de Software"> Desarrollo de Software</option>
+                    <option value="Marketing Digital"> Marketing Digital</option>
+                    <option value="Educación Inicial">Educación Inicial</option>
+                </select>
+                <br>
+
+            <label for="nivel">Nivel:</label>
+                <br>
+                <select name="nivel" id="nivel" style="width: 270px;">
+                    <option value="" disabled selected >Seleccione un nivel</option>
+                    <option value="Primer Nivel"> Primer Nivel</option>
+                    <option value="Segundo Nivel"> Segundo Nivel</option>
+                    <option value="Tercer Nivel">Tercer Nivel</option>
+                </select>
+                <br>
+                <!--input:radio permite seleccionar un único valor entre varias opciones con el mismo valor-->
+            <label for="Modalida">Modalida de Estudio</label>
+                <br>
+                <input type="radio" name="Modalida" id="Presencial"> Presencial
+                <input type="radio" name="Modalida" id="En Línea"> En Línea
+                <input type="radio" name="Modalida" id="Híbrida"> Híbrida
+                <br>
+             <label for="Periodo">Periodo Académico:</label>
+                <br>
+                <select name="Periodo" id="Periodo" style="width: 270px;">
+                    <option value="" disabled selected >Seleccione un nivel</option>
+                    <option value="2026-2027"> 2026-2027</option>
+                    <option value="2027-2028"> 2027-2028</option>
+                    <option value="2028-2029"> 2028-2029</option>
+                </select>
+                <br>
+                <!--input:radio permite seleccionar un único valor entre varias opciones con el mismo valor-->
+            <label for="Turno">Turno:</label>
+                <br>
+                <input type="radio" name="Turno" id="Mañana"> Mañana
+                <input type="radio" name="Turno" id="Tarde"> Tarde
+                <input type="radio" name="Turno" id="Noche"> Noche
+                <br>
+                <!--input:radio permite seleccionar un único valor entre varias opciones con el mismo valor-->
+            <label for="enterar">Cómo se enteró de la Institución?</label>
+                <br>
+                <select name="enterar" id="enterar" style="width: 270px;">
+                    <option value="" disabled selected >Seleccione una opción</option>
+                    <option value="Amigos"> Amigos</option>
+                    <option value="Redes Sociales"> Redes Sociales</option>
+                    <option value="Televisión"> Televisión</option>
+                </select>
+                <br>
+        </div>
+    </form>
+   </div>
+
+   <div>
+    <header>
+        <h2>
+            3. Habilidades y Conocimientos
+        </h2>
+    </header>
+    <div>
+        <form action="" method="get">
+            <div>
+                <label for="interés">Marque sus áreas de interés</label>
+                <br>
+                <input type="checkbox" name="Desarrollo Web"> Desarrollo Web
+                <br>
+                <input type="checkbox" name="Inteligencia Artificial"> Inteligencia Artificial
+                <br>
+                <input type="checkbox" name="Redes y Seguridad"> Redes y Seguridad
+                <br>
+                <input type="checkbox" name="Base de Datos"> Base de Datos
+                <br>
+                <input type="checkbox" name="Desarrollo Movil"> Desarrollo Movil
+                <br>
+                <input type="checkbox" name="Ciencias de Datos"> Ciencias de Datos
+                <br>
+                <input type="checkbox" name="Robótica"> Robótica
+                <br>
+                <input type="checkbox" name="Otras"> Otras
+                <br>    
+                <!--input:radio permite seleccionar un único valor entre varias opciones con el mismo valor-->
+                <label for="conocimientos">Nivel de Conocimientos en Programación:</label>
+                <br>
+                <input type="radio" name="conocimientos" id="Básico"> Básico
+                <br>
+                <input type="radio" name="conocimientos" id="Intermedio"> Intermedio
+                <br>
+                <input type="radio" name="conocimientos" id="Avanzado"> Avanzado
+                <br>
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <header>
+            <h2>4. Información Adicional</h2>
+        </header>
+        <div>
+            <form action="" method="post">
+                <div>
+                    <!--Button file me permite subir una imagen-->
+                    <label for="fotografía">Cargue su fotografía</label>
+                    <br>
+                    <input type="file" name="fotografía" id="fotografía" accept=".png,.jpg">
+                    <br>
+                    <label for="">Formatos permitidos: JPG, PNG (Máx. 2MB)</label>
+                    </div>
+                    <br>
+                <div>
+                    <!--Button file me permite subir un archivo-->
+                    <label for="documentos">Adjuntar documentos (opcional):</label>
+                    <br>
+                    <input type="file" name="documentos" id="documentos" accept=".pdf">
+                    <br>
+                    <label for="">PDF (Máx. 5MB)</label>
+                </div>
+                <br>
+                <div>
+                    <label for="observaciones">Observaciones:</label>
+                <br>
+                <!--Textarea: caja ingresar texto extenso-->
+                <textarea id="observaciones" name="observaciones" rows="4" cols="35">Escriba información adicional...
+                </textarea>
+                
+            </form>
+        </div>
+    </div>
+   </div>
+    <br>
+    <!--Button submit me permite enviar la peticion o informacion-->
+            <div>
+                <input type="submit" value="Registrar"> 
+            </div>
+            <br>
+    <!--Button me limpiar el todos los campos del formulario-->
+            <div>
+                <input type="button" value="Limpiar"> 
+            </div>
+            <br>
+    <!--Enlace para regresar al index-->
+     <div>
+        <a href="../index.html"> Ir a Home</a>
+    </div>
+</body>
+</html>
